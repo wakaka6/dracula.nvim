@@ -133,7 +133,7 @@ M.apply = function()
 	highlight("StatusLineTermNC", colors.comment, nil, nil, nil)
 
 	highlight("Directory", colors.cyan, nil, nil, nil)
-	highlight("DiffAdd", colors.bg, colors.green, nil, nil)
+	highlight("DiffAdd", colors.green, nil, nil, nil)
 	highlight("DiffChange", colors.orange, nil, nil, nil)
 	highlight("DiffDelete", colors.red, nil, nil, nil)
 	highlight("DiffText", colors.comment, nil, nil, nil)
@@ -405,6 +405,12 @@ M.apply = function()
 	highlight("BufferCurrentTarget", colors.red, nil, 'none', nil)
 	highlight("BufferVisibleTarget", colors.red, nil, 'none', nil)
 	highlight("BufferInactiveTarget", colors.red, nil, 'none', nil)
+
+    -- Dashboard
+    highlight("DashboardShortCut", colors.pink)
+    highlight("DashboardHeader", colors.blue)
+    highlight("DashboardCenter", colors.green)
+    highlight("DashboardFooter", colors.yellow, nil, "italic", nil)
 
 	-- Link highlights
 	vim.api.nvim_command('highlight link CompeDocumentation Pmenu')

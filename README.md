@@ -24,6 +24,7 @@
 - [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [LSPSaga](https://github.com/glepnir/lspsaga.nvim)
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [dashboard](https://github.com/glepnir/dashboard-nvim)
 
 ## ⬇️ Installation
 
@@ -31,12 +32,12 @@ Install via package manager
 
 ```lua
 -- Using Packer:
-use 'Mofiqul/dracula.nvim'
+use 'wakaka6/dracula.nvim'
 ```
 
 ```vim
 " Using Vim-Plug:
-Plug 'Mofiqul/dracula.nvim'
+Plug 'wakaka6/dracula.nvim'
 ```
 
 ## 🚀 Usage
@@ -143,7 +144,7 @@ let g:dracula_show_end_of_buffer = 1
 let g:dracula_transparent_bg = v:true
 " set custom lualine background color
 let g:dracula_lualine_bg_color = "#44475a"
--- set italic comment
+" set italic comment
 let g:dracula_italic_comment = 1
 ```
 
