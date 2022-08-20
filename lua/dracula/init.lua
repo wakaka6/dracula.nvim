@@ -14,6 +14,8 @@ local DEFAULT_COLORS = {
   purple = "#BD93F9",
   cyan = "#8BE9FD",
   pink = "#FF79C6",
+  gray = '#44475a',
+  bright_gray  = '#5f6a8e',
   bright_red = "#FF6E6E",
   bright_green = "#69FF94",
   bright_yellow = "#FFFFA5",
@@ -306,7 +308,12 @@ M.apply = function()
 	highlight("TelescopePreviewBorder", colors.comment, nil, nil, nil)
 	highlight("TelescopeSelection", colors.white, colors.selection, nil, nil)
 	highlight("TelescopeMultiSelection", colors.purple, colors.selection, nil, nil)
-	highlight("TelescopeNormal", colors.fg, colors.bg, nil, nil)
+
+	if(vim.g.dracula_transparent_bg == true) then
+        highlight("TelescopeNormal", colors.fg, nil, nil, nil)
+	else
+        highlight("TelescopeNormal", colors.fg, colors.bg, nil, nil)
+	end
 	highlight("TelescopeMatching", colors.green, nil, nil, nil)
 	highlight("TelescopePromptPrefix", colors.purple, nil, nil, nil)
 
